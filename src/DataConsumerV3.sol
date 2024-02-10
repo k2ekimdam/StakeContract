@@ -26,8 +26,8 @@ contract DataConsumerV3 {
      * Aggregator: BTC/USD
      * Address: 0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43
      */
-    constructor(address dataFeed) {
-        dataFeed = AggregatorV3Interface(dataFeed);
+    constructor(address _dataFeed) {
+        dataFeed = AggregatorV3Interface(_dataFeed);
     }
 
     /**
